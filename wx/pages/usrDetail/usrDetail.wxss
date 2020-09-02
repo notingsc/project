@@ -1,0 +1,43 @@
+/* pages/usrDetail/usrDetail.wxss */
+.usrdtail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txts {
+  margin: 40rpx;
+}
+
+.images {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.nam {
+  font-size: 30rpx;
+  padding: 40rpx;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60rpx;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+
+.inputBox {
+  width: 100%;
+  border: 1rpx solid #ccc;
+  padding: 20rpx;
+}

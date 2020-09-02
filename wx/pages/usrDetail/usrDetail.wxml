@@ -1,0 +1,30 @@
+<!--pages/usrDetail/usrDetail.wxml-->
+<view class="usrdtail">
+	<view class="txts">{{txt}}</view>
+	<image class="images" wx:if='{{image}}' src="{{image}}"></image>
+	<view class="nam">
+		<text>i文化地位和地位和地位的hi外汇市场三年内发发我发如果如果想成为大碗大碗发我国</text>
+	</view>
+</view>
+
+<view class="box">
+	<form catchsubmit="formSubmit" catchreset="formReset">
+	<view class="page-section">
+    <view class="weui-cells">手机号码：</view>
+    <view class="weui-cells">
+      <view class="inputBox">
+        <input class="weui-input" name='phone' type='number' value='{{form.phone}}' placeholder="手机号码" />
+      </view>
+    </view>
+  </view>
+	<view class="page-section">
+    <view class="weui-cells">验证码：</view>
+    <view class="weui-cells">
+      <view class="inputBox">
+        <input class="weui-input" name='name' value='{{form.name}}' type="text" placeholder="验证码" />
+      </view>
+    </view>
+  </view>
+		<button style="margin: 0 auto" type="primary" formType="submit" catchtap="goend">Submit</button>
+	</form>
+</view>

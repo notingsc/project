@@ -1,0 +1,5 @@
+<!--pages/time/time.wxml-->
+<view class="tim">
+	<view class="show">{{second}}s后自动返回</view>
+	<view class="btn" catchtap="click">立即返回</view>
+</view>

@@ -1,0 +1,54 @@
+<!--pages/car/car.wxml-->
+<view class="swiperTab">
+	<view class="swiper-tab">
+		<view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">选项一</view>
+		<view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">选项二</view>
+		<view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">选项三</view>
+
+	</view>
+
+	<swiper current="{{currentTab}}" class="swiper" duration="300" bindchange="bindChange">
+		<swiper-item>
+			<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="pickerList">
+				<view class="picker">
+					当前选择：{{array[index]}}
+				</view>
+			</picker>
+		</swiper-item>
+
+		<swiper-item>
+			<view class="section">
+				<view class="section__title">多列选择器</view>
+				<picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+					<view class="picker">
+						当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+					</view>
+				</picker>
+			</view>
+		</swiper-item>
+
+		<swiper-item>
+			<view class="section">
+				<view class="section__title">日期选择器</view>
+				<picker mode="date" value="{{date}}" start="1979-01-01" end="2030-12-31" bindchange="bindDateChange">
+					<view class="picker">
+						当前选择: {{date}}
+					</view>
+				</picker>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>
+
+<view class="list">
+	<view class="list-wape" wx:for="{{listData}}" wx:key="index" data-index="{{index}}">
+		<navigator class="list-item">
+			<view class="list-img">
+				<image class="image" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+			</view>
+			<view class="list-name">{{item.name}}</view>
+			<view class="list-num">{{item.num}}</view>
+			<view class="list-txt">{{item.txt}}</view>
+		</navigator>
+	</view>
+</view>

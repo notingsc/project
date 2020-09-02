@@ -1,0 +1,136 @@
+/**index.wxss**/
+.background {
+  width: 100%;
+  height: 280rpx;
+  position: absolute;
+  top: 0;
+  background-color: #0FAC8A;
+}
+
+.search {
+  height: 60rpx;
+  margin: 28rpx;
+  padding: 0 30rpx;
+  position: relative;
+  z-index: 7;
+  border-radius: 50rpx;
+  color: #A6A6A6;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.search-text {
+  font-size: 24rpx;
+}
+
+.banner {
+  height: 300rpx;
+}
+
+.banner .img-view {
+  height: 300rpx;
+  border-radius: 20rpx;
+  margin: 0 30rpx;
+  overflow: hidden;
+}
+
+.banner .img-view .img {
+  width: 100%;
+  height: 300rpx;
+}
+
+.nav{
+  margin: 30rpx;
+  overflow: auto;
+}
+.nav .nav-warp{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.nav .nav-warp .nav-item{
+  width: 100rpx;
+  height: 100rpx;
+}
+.imagec{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.nav .nav-warp .nav-item .title{
+  font-size: 18rpx;
+}
+
+
+.images{
+  width: 122.66rpx;
+  height: 122.66rpx;
+  border-radius: 25%;
+  /* background-color: #ebebeb; */
+}
+
+.list{
+  margin: 28rpx 28rpx 28rpx 0;
+  overflow: auto;
+}
+
+.list-warp{
+  width: 50%;
+  height: 170rpx;
+  border-radius: 18rpx;
+  margin: 0 0 28rpx 0;
+  float: left;
+}
+.list-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 28rpx;
+  margin: 0 0 0 28rpx;
+  border-radius: 18rpx;
+  background-color: #0FAC8A;
+}
+
+.login{
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name{
+  width:50%;
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+  padding: 20rpx;
+  color: #fff;
+  background-color: coral;
+}
+.qwe{
+  width:50%;
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+}
+.loging{
+width: 50%;
+height: 40rpx;
+line-height: 40rpx;
+background-color: cornflowerblue;
+float: left;
+padding: 20rpx 0 20rpx 0;
+text-align: center;
+}
+.remover{
+  width: 50%;
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: rgb(6, 90, 247);
+  float: left;
+  padding: 20rpx 0 20rpx 0;
+  text-align: center;
+}

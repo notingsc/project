@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/car/car",
+    "pages/class/class",
+    "pages/user/user",
+    "pages/list/list",
+    "pages/usrDetail/usrDetail",
+    "pages/time/time"
+  ],
+  "tabBar": {
+    "selectedColor": "#0FAC8A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/img/home-icon.png",
+        "selectedIconPath": "./static/img/home-icon_selected.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "分类",
+        "iconPath": "./static/img/class-icon.png",
+        "selectedIconPath": "./static/img/class-icon_selected.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "其他",
+        "iconPath": "./static/img/car-icon.png",
+        "selectedIconPath": "./static/img/car-icon_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./static/img/user-icon.png",
+        "selectedIconPath": "./static/img/user-icon_selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0FAC8A",
+    "navigationBarTitleText": "WX",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,14 @@
+/* pages/time/time.wxss */
+.tim{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+}
+.show{
+  color: red;
+}

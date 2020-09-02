@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="containers">
+	<view class="background"></view>
+
+	<!-- 搜索 -->
+	<navigator url="">
+		<view class="search">
+			<text class="search-text">请输入您要搜索的商品</text>
+		</view>
+	</navigator>
+
+	<!-- 轮播图 banner -->
+	<view class="banner">
+		<swiper indicator-dots autoplay indicator-active-color="#ffffff">
+			<block wx:for="{{3}}" wx:key="*this">
+				<swiper-item>
+					<view class="img-view">
+						<image class="img" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2845937221,3024056832&fm=26&gp=0.jpg"></image>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+
+	<!-- nav -->
+	<view class="nav">
+		<view class="nav-warp" wx:for="{{navList}}" wx:key="index">
+			<view class="nav-item"><image class="imagec" src="{{item.image}}"></image></view>
+			<text class="title">{{item.name}}</text>
+		</view>
+	</view>
+
+	<!-- list -->
+	<view class="list">
+		<view class="list-warp" wx:for="{{list}}" wx:key="*this">
+			<view class="list-list" catchtap="goList" data-index="{{index}}" data-title="{{item.title}}">
+				<view class="list-item">
+					<view class="list-title">{{item.title}}</view>
+					<view class="list-name">{{item.num}}</view>
+				</view>
+				<image class="images" src="../../static/img/599a521472424.jpg"></image>
+			</view>
+		</view>
+	</view>
+
+</view>

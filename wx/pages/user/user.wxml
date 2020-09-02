@@ -1,0 +1,14 @@
+<!--pages/user/user.wxml-->
+
+<view class="list">
+	<view class="list-warp" wx:for="{{usrList}}" wx:key="index">
+		<view class="list-list" catchtap="goDetail" data-index="{{index}}" data-txt="{{item.txt}}" data-image="{{item.image}}">
+			<image class="images" src="{{item.image}}"></image>
+			<view class="list-item">
+				<view class="list-title">{{item.txt}}</view>
+				<view class="list-name">{{item.num}}</view>
+			</view>
+		</view>
+	</view>
+</view>
+	

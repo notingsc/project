@@ -1,0 +1,114 @@
+/* pages/list/list.wxss */
+.list{
+  margin: 30rpx;
+  overflow: auto;
+}
+.list-warp{
+  width: 100%;
+  height: 60rpx;
+  background-color: cornflowerblue;
+  margin: 0 0 30rpx 0;
+  padding: 30rpx;
+}
+.list-list{
+  display: flex;
+}
+.images{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: coral;
+  margin-right: 30rpx;
+}
+/* 日历 */
+.calendarBox{
+  background: #fff;
+  padding: 30rpx 0;
+}
+.calendar_title {
+  width: 70%;
+  margin: 10rpx auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20pt;
+}
+
+.calendar_title .icon {
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 5rpx auto;
+  text-align: center;
+  color: #fff;
+  background: #0FAC8A;
+  border-radius: 50%;
+}
+
+.calendar {
+  width: 100%;
+  margin-top: 60rpx;
+  background: #fff;
+  padding: 0 0 20rpx 0;
+  font-family: FZZhunYuan-M02S;
+}
+
+.header {
+  font-size: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header>view {
+  display: inline-block;
+  width: 14.285%;
+  height: 60rpx;
+  color: #666;
+  font-size: 30rpx;
+  text-align: center;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.weekMark {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.weekMark view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #0FAC8A;
+}
+
+.date-box {
+  font-size: 0;
+  padding-top: 30rpx;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.date-box>view {
+  position: relative;
+  display: inline-block;
+  width: 14.285%;
+  color: #666;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.date-head {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 12pt;
+}
+
+.nowDay .date-head {
+  width: 60rpx;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #0FAC8A;
+  margin: 0 auto;
+}
