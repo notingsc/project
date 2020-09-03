@@ -11,4 +11,20 @@
 		</view>
 	</view>
 </view>
-	
+
+<view class="lists">
+	<view class="list-warps" wx:for="{{listdata}}" wx:key="index">
+		<view>天气情况</view>
+		<view class="list-list" data-index="{{index}}" data-city="{{item.city}}" data-dressing_advice="{{item.dressing_advice}}">
+			<view class="list-item">
+				<view class="list-title">城市：{{listdata.city}}</view>
+				<view class="list-name">建议：{{listdata.dressing_advice}}</view>
+				<view class="list-name">温度：{{listdata.temperature}}</view>
+				<view class="list-title">天气：{{listdata.weather}}</view>
+				<view class="list-name">风向：{{listdata.wind}}</view>
+				<view class="list-title">时间：{{listdata.date_y}}</view>
+				<view class="list-name">星期：{{listdata.week}}</view>
+			</view>
+		</view>
+	</view>
+</view>

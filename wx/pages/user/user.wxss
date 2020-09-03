@@ -23,4 +23,15 @@
   background-color: coral;
   margin-right: 30rpx;
 }
-
+.list-warps{
+  width: 100%;
+  height: auto;
+  background-color: #0FAC8A;
+  margin: 0 0 30rpx 0;
+  padding: 30rpx;
+}
+.list-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
