@@ -42,7 +42,7 @@
 
 <view class="list">
 	<view class="list-wape" wx:for="{{listData}}" wx:key="index" data-index="{{index}}">
-		<navigator class="list-item">
+		<navigator class="list-item" url="../uploader/uploader">
 			<view class="list-img">
 				<image class="image" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
 			</view>

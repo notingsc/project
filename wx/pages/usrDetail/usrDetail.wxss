@@ -41,3 +41,206 @@
   border: 1rpx solid #ccc;
   padding: 20rpx;
 }
+.formBox{
+  width: 100%;
+  border: 1rpx solid #ccc;
+  padding: 20rpx;
+}
+.ui_cell{
+  display: flex;
+  position: relative;
+  height: 100rpx;
+  line-height: 60rpx;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #eee;
+  transform:translate3d(0rpx, 0px, 0px);
+}
+.ui_cell_hd{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+.ui_cell_hd image{
+  width:100%;
+  height: 100%;
+}
+.ui_cell_bd{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.ui_cell_bd_must{
+  position: relative;
+}
+.ui_cell_bd_must:after{
+  display: inline;
+  content: '*';
+  color: #E62B2B;
+}
+.ui_cell_ft{
+  color: #999;
+  text-align: right;
+}
+.ui_cell_input{
+  height: 60rpx;
+  line-height: 60rpx;
+  flex: 3;
+}
+.ui_cell_getCode{
+  z-index:999;
+  position:absolute;
+  top:20rpx;
+  right:30rpx;
+  height:60rpx;
+  line-height:56rpx;
+  padding:0 20rpx;
+  font-size:9pt;
+  color:#f4a83a;
+  border:2rpx solid #f4a83a;
+  border-radius:35rpx;
+  box-sizing: border-box;
+}
+.ui_cell_aleryCode{
+  z-index: 999;
+  position: absolute;
+  top: 20rpx;
+  right:30rpx;
+  height: 60rpx;
+  line-height: 56rpx;
+  padding: 0 20rpx;
+  font-size: 9pt;
+  color: #d9d9d9;
+  border: 2rpx solid #d9d9d9;
+  border-radius: 35rpx;
+  box-sizing: border-box;
+}
+.ui_cell_picker{
+  height: 60rpx;
+  line-height: 60rpx;
+  flex: 3;
+}
+.ui_cell_switch{
+  position: relative;
+  top: -4rpx;
+}
+.ui_cell_right{
+  width: 20rpx;
+  height: 20rpx;
+  margin: 20rpx 0 0 20rpx;
+  box-sizing: border-box;
+  border-top: 2rpx solid #d9d9d9;
+  border-right: 2rpx solid #d9d9d9;
+  transform: rotate(45deg)
+}
+.ui_cell_del{
+  position: absolute;
+  height:100%;
+  line-height: 100rpx;
+  width: 120rpx;
+  text-align: center;
+  background: red;
+  right: -120rpx;
+  top: 0;
+  color: #fff;
+}
+.ui_cell_cancel{
+  position: absolute;
+  height:100%;
+  line-height: 100rpx;
+  width: 120rpx;
+  text-align: center;
+  background: #d9d9d9;
+  right: -240rpx;
+  top: 0;
+  color: #fff;
+}
+.ui_cell_toLeft{
+  animation: fnToLeft 0.5s forwards;
+}
+.ui_cell_toRight{
+  animation: fnToRight 0.5s forwards;
+}
+@keyframes fnToLeft{
+  from{transform:translate3d(0rpx, 0px, 0px)}
+  to{transform:translate3d(-240rpx, 0px, 0px)}
+}
+@keyframes fnToRight{
+  from{transform:translate3d(-240rpx, 0px, 0px)}
+  to{transform:translate3d(0rpx, 0px, 0px)}
+}
+.ui_panel{
+  position: relative;
+  padding: 30rpx;
+  display: flex;
+  border-bottom: 2rpx solid #eee;
+}
+.ui_panel_hd{
+  margin-right: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+}
+.ui_panel_hd image{
+  width: 100%;
+  background: #eee;
+  max-height: 100%;
+  vertical-align: top;
+}
+.ui_panel_bd{
+ flex: 1;
+}
+/* form */
+textarea{
+  position: relative;
+  padding: 20rpx 30rpx;
+  width:100%;
+  margin: 40rpx 0;
+  box-sizing: border-box;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+}
+textarea text{
+  position: absolute;
+  right: 40rpx;
+  bottom: 40rpx;
+  color: #d9d9d9;
+}
+.ui_agree{
+  display: flex;
+  font-size: 9pt;
+  height: 70rpx;
+  line-height: 50rpx;
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui_agree_text{
+  line-height: 60rpx;
+}
+.ui_agree_text text{
+  color: #586c94;
+}
+
+
+checkbox .wx-checkbox-input {
+  border-radius: 50%;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* checkbox选中时样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%;
+  background: #586c94;
+  color: #fff;
+  width: 70rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border: none;
+}

@@ -6,7 +6,7 @@
 		<text>i文化地位和地位和地位的hi外汇市场三年内发发我发如果如果想成为大碗大碗发我国</text>
 	</view>
 </view>
-
+<!-- 
 <view class="box">
 	<form catchsubmit="formSubmit" catchreset="formReset">
 	<view class="page-section">
@@ -27,4 +27,46 @@
   </view>
 		<button style="margin: 0 auto" type="primary" formType="submit" catchtap="goend">Submit</button>
 	</form>
+</view> -->
+
+<view class="formBox">
+	<!-- 表单 -->
+	<view class='domes_title'>Form</view>
+	<!-- input -->
+	<view class='ui_cell'>
+		<view class='ui_cell_bd ui_cell_bd_must'>电话</view>
+		<input class='ui_cell_input' type='text' bindinput='' value='{{}}' placeholder='请输入'></input>
+	</view>
+	<!-- picker -->
+	<view class='ui_cell'>
+		<view class='ui_cell_bd'>选择</view>
+		<picker class='ui_cell_picker' bindchange="picker" value="{{index}}" range="{{pickList}}">
+			<input class='ui_cell_input' disabled='true' placeholder='请选择' value="{{pickValue}}"></input>
+		</picker>
+		<view class='ui_cell_right'></view>
+	</view>
+	<!-- switch -->
+	<view class='ui_cell'>
+		<view class='ui_cell_bd'>默认</view>
+		<switch class='ui_cell_switch' bindchange="switchChange" />
+	</view>
+	<!-- 验证码 -->
+	<view class='ui_cell'>
+		<view class='ui_cell_bd ui_cell_bd_must'>验证码</view>
+		<input class='ui_cell_input' type='text' bindinput='' value='' placeholder='请输入验证码'></input>
+		<text class='ui_cell_getCode' catchtap='getCode' wx:if="{{!showCode}}">获取验证码</text>
+		<text class='ui_cell_aleryCode' wx:if="{{showCode}}">重新发送({{time}}s)</text>
+	</view>
+	<!-- textarea -->
+	<textarea maxlength='200' bindinput='note' placeholder='请输入反馈,我们将为您不断改进'>
+    <text class='eColor'>{{length}}/200</text>
+  </textarea>
+
+	<button style="margin: 0 auto" type="primary" formType="submit" catchtap="goend">Submit</button>
+
+	<view class='ui_agree'>
+		<checkbox></checkbox>
+		<text class='ui_agree_text'>阅读并同意 <text>《相关条款》</text></text>
+	</view>
+
 </view>

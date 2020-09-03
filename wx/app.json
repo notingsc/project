@@ -7,7 +7,8 @@
     "pages/user/user",
     "pages/list/list",
     "pages/usrDetail/usrDetail",
-    "pages/time/time"
+    "pages/time/time",
+    "pages/uploader/uploader"
   ],
   "tabBar": {
     "selectedColor": "#0FAC8A",
